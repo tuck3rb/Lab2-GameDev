@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Trash : MonoBehaviour {
+
     public string text;
+
+    private bool pickUpAllowed;
 
     public void OnTriggerEnter2D(Collider2D collider2D) {
         print("Entered..");
         if (collider2D.gameObject.CompareTag("Player")) {
             GameManager.Instance.DialogShow(text);
+            pickUpAllowed = true;
         }
     }
 
@@ -16,6 +21,7 @@ public class Trash : MonoBehaviour {
         if (collider2D.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.DialogHide();
+            pickUpAllowed = false;
         }
     }
 
@@ -24,6 +30,13 @@ public class Trash : MonoBehaviour {
     }
 
     void Update() {
-
+        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+            PickUp();
     }
+
+    private void PickUp() {
+        Destroy(gameObject);
+    }
+
+
 }
