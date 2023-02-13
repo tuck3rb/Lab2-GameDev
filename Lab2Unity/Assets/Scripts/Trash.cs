@@ -36,6 +36,7 @@ public class Trash : MonoBehaviour {
 
     private void PickUp() {
         Destroy(gameObject);
+        ScoreManager.instance.AddPoint();
     }
 
 
