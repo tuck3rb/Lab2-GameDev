@@ -11,6 +11,8 @@ public class ScoreManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
+    [SerializeField] private AudioSource noise;
+
     int score = 0;
 
     private void Awake() {
@@ -21,6 +23,7 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         scoreText.text = score.ToString() + " POINTS";
+        noise = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +35,15 @@ public class ScoreManager : MonoBehaviour
     public void AddPoint() {
         score += 1;
         scoreText.text = score.ToString() + " POINTS";
-
+        StartCoroutine("Sound");
     }
+
+    IEnumerator Sound()
+    {
+        noise.Play();
+        Debug.Log("Playing Crash Now I Hope??");
+        yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
+        
+    }
+
 }
