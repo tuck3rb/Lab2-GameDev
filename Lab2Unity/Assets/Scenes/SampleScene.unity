@@ -2630,6 +2630,18 @@ CompositeCollider2D:
       - {x: 9.06253, y: 14}
       - {x: 10, y: 13.999971}
       - {x: 10.00003, y: 13}
+    - - {x: 5.999971, y: 13}
+      - {x: 6.0000296, y: 16}
+      - {x: 7.3125, y: 16.000029}
+      - {x: 7.312493, y: 16.812508}
+      - {x: 7.1874895, y: 16.937502}
+      - {x: 7, y: 16.937471}
+      - {x: 6.9999623, y: 16.875008}
+      - {x: 6.437497, y: 17}
+      - {x: 6, y: 17.000029}
+      - {x: 5.999971, y: 21}
+      - {x: 5.625, y: 20.999971}
+      - {x: 5.625029, y: 13}
     - - {x: -3.6250293, y: -3}
       - {x: -3.6249704, y: 5}
       - {x: 4.625, y: 4.9999704}
@@ -2656,18 +2668,6 @@ CompositeCollider2D:
       - {x: -12.99997, y: 5}
       - {x: -7.375, y: 4.9999704}
       - {x: -7.3749704, y: -3}
-    - - {x: 5.999971, y: 13}
-      - {x: 6.0000296, y: 16}
-      - {x: 7.3125, y: 16.000029}
-      - {x: 7.312493, y: 16.812508}
-      - {x: 7.1874895, y: 16.937502}
-      - {x: 7, y: 16.937471}
-      - {x: 6.9999623, y: 16.875008}
-      - {x: 6.437497, y: 17}
-      - {x: 6, y: 17.000029}
-      - {x: 5.999971, y: 21}
-      - {x: 5.625, y: 20.999971}
-      - {x: 5.625029, y: 13}
     - - {x: 2.999971, y: 17}
       - {x: 2.999971, y: 18}
       - {x: 2, y: 17.999971}
@@ -2677,14 +2677,14 @@ CompositeCollider2D:
       - {x: 4.999971, y: 18}
       - {x: 4, y: 17.999971}
       - {x: 4.000029, y: 15.312499}
-    - - {x: 2.374971, y: 8}
-      - {x: 2.374971, y: 13}
-      - {x: 2, y: 12.99997}
-      - {x: 2.0000293, y: 8}
     - - {x: 8.99997, y: 8}
       - {x: 8.99997, y: 13}
       - {x: 8.625, y: 12.99997}
       - {x: 8.62503, y: 8}
+    - - {x: 2.374971, y: 8}
+      - {x: 2.374971, y: 13}
+      - {x: 2, y: 12.99997}
+      - {x: 2.0000293, y: 8}
     - - {x: 0.9374892, y: 2}
       - {x: 1, y: 2.0625107}
       - {x: 0.9999973, y: 3.5625057}
@@ -2999,6 +2999,8 @@ GameObject:
   m_Component:
   - component: {fileID: 395664784}
   - component: {fileID: 395664783}
+  - component: {fileID: 395664786}
+  - component: {fileID: 395664785}
   m_Layer: 0
   m_Name: pizza-box
   m_TagString: Untagged
@@ -3073,6 +3075,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395664785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395664782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: There isn't even any pizza left in here.
+--- !u!61 &395664786
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395664782}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.3}
+    newSize: {x: 0.6, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1 &449451492
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,9 +3239,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1340983422}
-  - {fileID: 1464765256}
   - {fileID: 1180538737}
+  - {fileID: 1464765256}
+  - {fileID: 1340983422}
   - {fileID: 224249720}
   - {fileID: 1376364040}
   m_Father: {fileID: 0}
@@ -3316,6 +3357,8 @@ GameObject:
   m_Component:
   - component: {fileID: 589406688}
   - component: {fileID: 589406687}
+  - component: {fileID: 589406690}
+  - component: {fileID: 589406689}
   m_Layer: 0
   m_Name: paper-bag
   m_TagString: Untagged
@@ -3390,6 +3433,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &589406689
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589406686}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.35, y: 0.46}
+    newSize: {x: 0.35, y: 0.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.35, y: 0.46}
+  m_EdgeRadius: 0
+--- !u!114 &589406690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589406686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I wonder where they got this from?
 --- !u!1 &827868449
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,7 +3587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e670f8503fffb9741b48f35a9b6ebeaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1113391244}
 --- !u!1 &952301304
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,6 +3598,8 @@ GameObject:
   m_Component:
   - component: {fileID: 952301306}
   - component: {fileID: 952301305}
+  - component: {fileID: 952301308}
+  - component: {fileID: 952301307}
   m_Layer: 0
   m_Name: milk
   m_TagString: Untagged
@@ -3590,6 +3674,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &952301307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952301304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Expired
+--- !u!61 &952301308
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952301304}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.39, y: 0.55}
+    newSize: {x: 0.39, y: 0.55}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.39, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &953097394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,6 +3723,8 @@ GameObject:
   m_Component:
   - component: {fileID: 953097396}
   - component: {fileID: 953097395}
+  - component: {fileID: 953097398}
+  - component: {fileID: 953097397}
   m_Layer: 0
   m_Name: newspaper
   m_TagString: Untagged
@@ -3674,6 +3799,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953097397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953097394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: This is from 7 weeks ago.
+--- !u!61 &953097398
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953097394}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.53, y: 0.28}
+    newSize: {x: 0.53, y: 0.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.53, y: 0.28}
+  m_EdgeRadius: 0
 --- !u!1 &1113391242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3734,8 +3898,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0 POINTS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 50fb89fc8bfc06d4c85a42c8da2f0e69, type: 2}
+  m_sharedMaterial: {fileID: -3397734996844144412, guid: 50fb89fc8bfc06d4c85a42c8da2f0e69, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3819,6 +3983,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1116829946}
   - component: {fileID: 1116829945}
+  - component: {fileID: 1116829948}
+  - component: {fileID: 1116829947}
   m_Layer: 0
   m_Name: detergent
   m_TagString: Untagged
@@ -3893,6 +4059,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1116829947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116829944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I haven't even seen my roommate do laundry
+--- !u!61 &1116829948
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116829944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.36, y: 0.45}
+    newSize: {x: 0.36, y: 0.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.36, y: 0.45}
+  m_EdgeRadius: 0
 --- !u!1 &1180538736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,7 +4132,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 471558763}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1180538738
 TilemapRenderer:
@@ -6110,13 +6315,13 @@ CompositeCollider2D:
         Y: 80000000
       - X: 88750000
         Y: 80000000
-    - - X: -126250000
-        Y: 60000000
-      - X: -130000000
-        Y: 60000000
-      - X: -130000000
+    - - X: 140000000
         Y: -9999999
-      - X: -126250000
+      - X: 140000000
+        Y: 60000000
+      - X: 136250000
+        Y: 60000000
+      - X: 136250000
         Y: -10000000
     - - X: 103750000
         Y: 60000000
@@ -6126,13 +6331,13 @@ CompositeCollider2D:
         Y: -9999999
       - X: 103750000
         Y: -10000000
-    - - X: 140000000
+    - - X: -126250000
+        Y: 60000000
+      - X: -130000000
+        Y: 60000000
+      - X: -130000000
         Y: -9999999
-      - X: 140000000
-        Y: 60000000
-      - X: 136250000
-        Y: 60000000
-      - X: 136250000
+      - X: -126250000
         Y: -10000000
     - - X: 10000000
         Y: 43750000
@@ -6226,18 +6431,6 @@ CompositeCollider2D:
         Y: 20000000
       - X: -31250000
         Y: 20000000
-    - - X: -70000000
-        Y: 30000000
-      - X: -80000000
-        Y: 30000000
-      - X: -80000000
-        Y: 20000000
-      - X: -77500000
-        Y: 20000000
-      - X: -77500000
-        Y: -20000000
-      - X: -70000000
-        Y: -20000000
     - - X: 48750000
         Y: 21875000
       - X: 48750000
@@ -6254,15 +6447,27 @@ CompositeCollider2D:
         Y: 20000000
       - X: 48125000
         Y: 20000000
-    - - X: -11250000
-        Y: 6875000
-      - X: -13125000
+    - - X: -70000000
+        Y: 30000000
+      - X: -80000000
+        Y: 30000000
+      - X: -80000000
+        Y: 20000000
+      - X: -77500000
+        Y: 20000000
+      - X: -77500000
+        Y: -20000000
+      - X: -70000000
+        Y: -20000000
+    - - X: 30000000
         Y: 10000000
-      - X: -20000000
+      - X: 24375000
         Y: 10000000
-      - X: -20000000
+      - X: 21250000
+        Y: 8125000
+      - X: 21250000
         Y: -10000000
-      - X: -11250000
+      - X: 30000000
         Y: -10000000
     - - X: -90000000
         Y: 10000000
@@ -6288,24 +6493,16 @@ CompositeCollider2D:
         Y: -20000000
       - X: -90000000
         Y: -20000000
-    - - X: 30000000
+    - - X: -11250000
+        Y: 6875000
+      - X: -13125000
         Y: 10000000
-      - X: 24375000
+      - X: -20000000
         Y: 10000000
-      - X: 21250000
-        Y: 8125000
-      - X: 21250000
+      - X: -20000000
         Y: -10000000
-      - X: 30000000
+      - X: -11250000
         Y: -10000000
-    - - X: 103750000
-        Y: -10000000
-      - X: 100000000
-        Y: -10000000
-      - X: 100000000
-        Y: -80000000
-      - X: 103750000
-        Y: -80000000
     - - X: 10000000
         Y: -10000000
       - X: 0
@@ -6314,14 +6511,14 @@ CompositeCollider2D:
         Y: -20000000
       - X: 10000000
         Y: -20000000
-    - - X: 140000000
+    - - X: 103750000
         Y: -10000000
-      - X: 136250000
+      - X: 100000000
         Y: -10000000
-      - X: 136250000
-        Y: -130000000
-      - X: 140000000
-        Y: -130000000
+      - X: 100000000
+        Y: -80000000
+      - X: 103750000
+        Y: -80000000
     - - X: -120000000
         Y: -50000000
       - X: -126250000
@@ -6334,14 +6531,14 @@ CompositeCollider2D:
         Y: -53750000
       - X: -120000000
         Y: -53750000
-    - - X: -90000000
-        Y: -50000000
-      - X: -93750000
-        Y: -50000000
-      - X: -93750000
-        Y: -70000000
-      - X: -90000000
-        Y: -70000000
+    - - X: 140000000
+        Y: -10000000
+      - X: 136250000
+        Y: -10000000
+      - X: 136250000
+        Y: -130000000
+      - X: 140000000
+        Y: -130000000
     - - X: -70000000
         Y: -53750000
       - X: 80000000
@@ -6358,6 +6555,14 @@ CompositeCollider2D:
         Y: -130000000
       - X: -70000000
         Y: -130000000
+    - - X: -90000000
+        Y: -50000000
+      - X: -93750000
+        Y: -50000000
+      - X: -93750000
+        Y: -70000000
+      - X: -90000000
+        Y: -70000000
     - - X: -90000000
         Y: -76250000
       - X: -130000000
@@ -6442,18 +6647,6 @@ CompositeCollider2D:
         Y: -110000000
       - X: 110000000
         Y: -110000000
-    - - X: -110625000
-        Y: -103125000
-      - X: -113750000
-        Y: -100625000
-      - X: -118125000
-        Y: -100625000
-      - X: -119375000
-        Y: -101875000
-      - X: -119375000
-        Y: -110000000
-      - X: -110625000
-        Y: -110000000
     - - X: -80625000
         Y: -101875000
       - X: -81875000
@@ -6465,6 +6658,18 @@ CompositeCollider2D:
       - X: -89375000
         Y: -110000000
       - X: -80625000
+        Y: -110000000
+    - - X: -110625000
+        Y: -103125000
+      - X: -113750000
+        Y: -100625000
+      - X: -118125000
+        Y: -100625000
+      - X: -119375000
+        Y: -101875000
+      - X: -119375000
+        Y: -110000000
+      - X: -110625000
         Y: -110000000
     - - X: 119375000
         Y: -118750000
@@ -6717,6 +6922,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1219738714}
   - component: {fileID: 1219738713}
+  - component: {fileID: 1219738716}
+  - component: {fileID: 1219738715}
   m_Layer: 0
   m_Name: water
   m_TagString: Untagged
@@ -6791,6 +6998,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219738715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219738712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: A half empty water bottle
+--- !u!61 &1219738716
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219738712}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.15, y: 0.45}
+    newSize: {x: 0.15, y: 0.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.45}
+  m_EdgeRadius: 0
 --- !u!1 &1228036975
 GameObject:
   m_ObjectHideFlags: 0
@@ -6825,7 +7071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4, y: -183}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1340983421
@@ -6859,7 +7105,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 471558763}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1340983423
 TilemapRenderer:
@@ -11956,6 +12202,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1341372954}
   - component: {fileID: 1341372953}
+  - component: {fileID: 1341372956}
+  - component: {fileID: 1341372955}
   m_Layer: 0
   m_Name: cat-food
   m_TagString: Untagged
@@ -12030,6 +12278,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1341372955
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341372952}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.23, y: 0.3}
+    newSize: {x: 0.23, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.23, y: 0.3}
+  m_EdgeRadius: 0
+--- !u!114 &1341372956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341372952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I will do anything for my cat
 --- !u!1 &1376364039
 GameObject:
   m_ObjectHideFlags: 0
@@ -15222,6 +15509,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1790853835}
   - component: {fileID: 1790853834}
+  - component: {fileID: 1790853837}
+  - component: {fileID: 1790853836}
   m_Layer: 0
   m_Name: cola
   m_TagString: Untagged
@@ -15296,6 +15585,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1790853836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790853833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: My roommate is soooo messy!
+--- !u!61 &1790853837
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790853833}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.17, y: 0.5}
+    newSize: {x: 0.17, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.17, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1809654261
 GameObject:
   m_ObjectHideFlags: 0
@@ -15454,9 +15782,9 @@ RectTransform:
   m_Father: {fileID: 1228036976}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -22, y: 89}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975623659
@@ -15481,8 +15809,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 50fb89fc8bfc06d4c85a42c8da2f0e69, type: 2}
+  m_sharedMaterial: {fileID: -3397734996844144412, guid: 50fb89fc8bfc06d4c85a42c8da2f0e69, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15542,7 +15870,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -357.59152, y: 0, z: -409.2915, w: -90.47496}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
