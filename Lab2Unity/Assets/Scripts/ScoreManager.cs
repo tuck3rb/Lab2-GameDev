@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
     }
 
     public void AddPoint() {
-        score += 1;
+        score += 10;
         scoreText.text = score.ToString() + " POINTS";
         StartCoroutine("Sound");
     }
