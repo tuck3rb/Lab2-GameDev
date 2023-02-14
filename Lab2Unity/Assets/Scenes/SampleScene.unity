@@ -347,9 +347,9 @@ GameObject:
   - component: {fileID: 224249723}
   - component: {fileID: 224249725}
   - component: {fileID: 224249724}
-  m_Layer: 4
+  m_Layer: 6
   m_Name: Collisions2
-  m_TagString: Untagged
+  m_TagString: Tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3502,9 +3502,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1340983422}
   - {fileID: 1180538737}
   - {fileID: 1464765256}
-  - {fileID: 1340983422}
   - {fileID: 224249720}
   - {fileID: 1376364040}
   m_Father: {fileID: 0}
@@ -3785,7 +3785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire_noise: {fileID: 678984582}
   scene: ScoreScene
-  flames: {fileID: 0}
+  Flames: {fileID: 2493418622433884632, guid: ef01620fcd8b14e9d9812df9dbefc413, type: 3}
 --- !u!212 &678984580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4906,9 +4906,9 @@ GameObject:
   - component: {fileID: 1180538740}
   - component: {fileID: 1180538742}
   - component: {fileID: 1180538741}
-  m_Layer: 2
+  m_Layer: 6
   m_Name: Items (Collision)
-  m_TagString: Untagged
+  m_TagString: Tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4926,7 +4926,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 471558763}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1180538738
 TilemapRenderer:
@@ -7975,7 +7975,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 471558763}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1340983423
 TilemapRenderer:
@@ -13299,9 +13299,9 @@ GameObject:
   - component: {fileID: 1376364040}
   - component: {fileID: 1376364042}
   - component: {fileID: 1376364041}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Items (No Collision)
-  m_TagString: Untagged
+  m_TagString: Tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14070,7 +14070,7 @@ GameObject:
   - component: {fileID: 1464765259}
   - component: {fileID: 1464765261}
   - component: {fileID: 1464765260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collisions1
   m_TagString: Tiles
   m_Icon: {fileID: 0}
@@ -14090,7 +14090,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 471558763}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1464765257
 TilemapRenderer:
