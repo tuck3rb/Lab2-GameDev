@@ -38,7 +38,7 @@ public class Trash : MonoBehaviour {
 
     private void PickUp() {
         Instantiate(Explosion, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
         ScoreManager.instance.AddPoint();
     }
 

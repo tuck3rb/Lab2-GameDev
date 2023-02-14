@@ -7,7 +7,7 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
 
-    public static ScoreManager instance;
+    public static ScoreManager instance {get; private set;}
 
     public TextMeshProUGUI scoreText;
 
@@ -20,10 +20,11 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         scoreText.text = score.ToString() + " POINTS";
         noise = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame

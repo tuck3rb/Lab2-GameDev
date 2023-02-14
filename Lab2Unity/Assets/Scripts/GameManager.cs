@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
+
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
         StopAllCoroutines();
@@ -29,11 +30,13 @@ public class GameManager : MonoBehaviour
     }
 
     void Awake() {
+        print("TEST");
         if (Instance == null) {
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else {
+            print("DESTROY TEST");
             Destroy(gameObject);
         }
     }
@@ -43,13 +46,11 @@ public class GameManager : MonoBehaviour
         // maybe need this?
     }
 
-    // Start is called before the first frame update
-    void Start() {
-
-    }
 
     // Update is called once per frame
     void Update() {
 
     }
+
+    
 }
