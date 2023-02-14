@@ -29,7 +29,7 @@ public class Fireplace : MonoBehaviour {
     void OnMouseDown() {
         StartCoroutine("FireSound");
         Instantiate(flames);
-        GameManager.Instance.ClickFireplace(scene);
+        GameManager.Instance.ClickFireplace(scene); // change scene
     }
 
     IEnumerator FireSound()
