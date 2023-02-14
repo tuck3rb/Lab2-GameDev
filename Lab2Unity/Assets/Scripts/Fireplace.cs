@@ -6,7 +6,7 @@ public class Fireplace : MonoBehaviour {
 
     [SerializeField] private AudioSource fire_noise;
     public string scene;
-    public GameObject flames;
+    public GameObject Flames;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,8 @@ public class Fireplace : MonoBehaviour {
 
     void OnMouseDown() {
         StartCoroutine("FireSound");
-        Instantiate(flames);
+        Instantiate(Flames);
+        // Instantiate(Flames, transform.position, Quaternion.identity);
         GameManager.Instance.ClickFireplace(scene); // change scene
     }
 
