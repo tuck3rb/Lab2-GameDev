@@ -5,6 +5,8 @@ using UnityEngine;
 public class Fireplace : MonoBehaviour {
 
     [SerializeField] private AudioSource fire_noise;
+    public string scene;
+    public GameObject flames;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +18,9 @@ public class Fireplace : MonoBehaviour {
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
-            // GameManager.Instance.ClickFireplace(scene);
-            print("clicked!");
             StartCoroutine("FireSound");
+            Instantiate(flames);
+            GameManager.Instance.ClickFireplace(scene);
         }
     }
 
