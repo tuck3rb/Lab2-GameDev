@@ -17,11 +17,19 @@ public class Fireplace : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) {
-            StartCoroutine("FireSound");
-            Instantiate(flames);
-            GameManager.Instance.ClickFireplace(scene);
-        }
+        // if (Input.GetMouseButtonDown(0)) {
+        //     if (LookForGameObject(out RaycastHit hit)) {
+        //         StartCoroutine("FireSound");
+        //         Instantiate(flames);
+        //         GameManager.Instance.ClickFireplace(scene);
+        //     }
+        // }
+    }
+
+    void OnMouseDown() {
+        StartCoroutine("FireSound");
+        Instantiate(flames);
+        GameManager.Instance.ClickFireplace(scene);
     }
 
     IEnumerator FireSound()
@@ -30,4 +38,10 @@ public class Fireplace : MonoBehaviour {
         yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
         
     }
+
+    // private bool LookForGameObject(out RaycastHit hit) {
+    //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //     return Physics.Raycast(ray, out hit);
+    // }
+
 }
