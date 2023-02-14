@@ -9,6 +9,8 @@ public class Trash : MonoBehaviour {
 
     private bool pickUpAllowed;
 
+    public GameObject Explosion;
+
     public void OnTriggerEnter2D(Collider2D collider2D) {
         print("Entered..");
         if (collider2D.gameObject.CompareTag("Player")) {
@@ -35,6 +37,7 @@ public class Trash : MonoBehaviour {
     }
 
     private void PickUp() {
+        Instantiate(Explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
         ScoreManager.instance.AddPoint();
     }

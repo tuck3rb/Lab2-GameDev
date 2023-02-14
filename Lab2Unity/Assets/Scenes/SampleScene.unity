@@ -2878,6 +2878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: 
+  Explosion: {fileID: 0}
 --- !u!212 &242244754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3080,6 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: There isn't even any pizza left in here.
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &395664786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3465,6 +3467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: I wonder where they got this from?
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!1 &678984578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,6 +4061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Expired
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &952301308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4183,6 +4187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: This is from 7 weeks ago.
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &953097398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4527,6 +4532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: I haven't even seen my roommate do laundry
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1116829948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7399,6 +7405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Walk around and pick up your roommates trash by pressing "e". Click the fireplace
     when finished!
+  Explosion: {fileID: 0}
 --- !u!61 &1215150338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7539,6 +7546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: A half empty water bottle
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1219738716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12946,6 +12954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: I will do anything for my cat
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!1 &1376364039
 GameObject:
   m_ObjectHideFlags: 0
@@ -16251,6 +16260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: My roommate is soooo messy!
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1790853837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16376,6 +16386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: What'd they order?
+  Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1809654265
 BoxCollider2D:
   m_ObjectHideFlags: 0
