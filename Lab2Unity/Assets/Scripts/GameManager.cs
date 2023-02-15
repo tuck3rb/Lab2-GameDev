@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
+    public GameObject endBox;
+    public TextMeshProUGUI endText;
+
     public GameObject eventSystem;
     public GameObject canvas;
 
@@ -28,6 +31,24 @@ public class GameManager : MonoBehaviour
         dialogText.text = "";
         foreach (char c in text.ToCharArray()) {
             dialogText.text += c;
+            yield return new WaitForSeconds(0.02f);
+        }
+    }
+
+    public void EndShow(string text) {
+        endBox.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(TypeEndText(text));
+    }
+
+    public void EndHide() {
+        endBox.SetActive(false);
+    }
+
+    IEnumerator TypeEndText(string text) {
+        endText.text = "";
+        foreach (char c in text.ToCharArray()) {
+            endText.text += c;
             yield return new WaitForSeconds(0.02f);
         }
     }

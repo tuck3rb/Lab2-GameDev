@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fireplace : MonoBehaviour {
 
     [SerializeField] private AudioSource fire_noise;
     public string scene;
     public GameObject Flames;
+
+    public string text;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,8 @@ public class Fireplace : MonoBehaviour {
         Instantiate(Flames);
         // Instantiate(Flames, transform.position, Quaternion.identity);
         GameManager.Instance.ClickFireplace(scene); // change scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ScoreManager.instance.ResetPoints();
     }
 
     IEnumerator FireSound()
