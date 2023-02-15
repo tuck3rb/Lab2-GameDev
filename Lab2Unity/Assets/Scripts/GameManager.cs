@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
 
+    public GameObject eventSystem;
+    public GameObject canvas;
+
 
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
@@ -34,6 +37,8 @@ public class GameManager : MonoBehaviour
         if (Instance == null) {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(eventSystem);
+            DontDestroyOnLoad(canvas);
         }
         else {
             print("DESTROY TEST");
