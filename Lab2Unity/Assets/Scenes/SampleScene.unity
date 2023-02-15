@@ -4250,7 +4250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Expired
+  text: EXPIRED!
   Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &952301308
 BoxCollider2D:
@@ -4376,7 +4376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: This is from 7 weeks ago.
+  text: This is from 7 weeks ago...
   Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &953097398
 BoxCollider2D:
@@ -4721,7 +4721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: I haven't even seen my roommate do laundry
+  text: I've never seen my roommate do laundry.
   Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1116829948
 BoxCollider2D:
@@ -7735,7 +7735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: A half empty water bottle
+  text: A half empty water bottle...
   Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1219738716
 BoxCollider2D:
@@ -13143,7 +13143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: I will do anything for my cat
+  text: My cat is the only roommate I actually like.
   Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!1 &1376364039
 GameObject:
@@ -16663,7 +16663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c105141b350704f1399ca72359339266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: What'd they order?
+  text: I wonder what they ordered...
   Explosion: {fileID: 8117792477171443197, guid: a4f6d16008d7b2e4dbde8c17242d3be6, type: 3}
 --- !u!61 &1809654265
 BoxCollider2D:
