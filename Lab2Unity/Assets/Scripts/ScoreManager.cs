@@ -16,8 +16,12 @@ public class ScoreManager : MonoBehaviour
     int score = 0;
 
     private void Awake() {
-        instance = this;
-        
+        if (instance == null) {
+            instance = this;
+        }
+        else {
+            Destroy(scoreText.gameObject);
+        }
     }
 
     // Start is called before the first frame update
@@ -25,13 +29,17 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = score.ToString() + " POINTS";
         noise = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void ResetPoints() {
+        score = 0;
+        scoreText.text = score.ToString() + " POINTS";
     }
 
     public void AddPoint() {

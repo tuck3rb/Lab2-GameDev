@@ -20,6 +20,7 @@ public class Control : MonoBehaviour
     // https://www.youtube.com/watch?v=TVSLCZWYL_E
     public void ResetGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ScoreManager.instance.ResetPoints();
     }
 
 }
